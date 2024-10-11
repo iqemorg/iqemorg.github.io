@@ -7,8 +7,17 @@
     <meta name="keywords" content="quantum electronics, medicine, open-access, research, quantum biology">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="your-google-site-verification-code">
-    <title>Institute for Quantum Electronics in Medicine (IQEM)</title>
+    <meta property="og:title" content="Institute for Quantum Electronics in Medicine (IQEM)">
+    <meta property="og:description" content="IQEM is dedicated to non-invasive medical tech development through quantum electronics.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://iqem.org">
+    <meta property="og:image" content="https://iqem.org/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Institute for Quantum Electronics in Medicine (IQEM)">
+    <meta name="twitter:description" content="IQEM is dedicated to quantum electronics research in medicine.">
+    <meta name="twitter:image" content="https://iqem.org/logo.png">
     <link rel="canonical" href="https://iqem.org">
+    <title>Institute for Quantum Electronics in Medicine (IQEM)</title>
     <style>
         a, a:visited, a:hover, a:active {
             color: #782F40;
@@ -36,6 +45,27 @@
       "publishingPrinciples": "https://iqem.org/open-access-policy"
     }
     </script>
+    <!-- Add Breadcrumb -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://iqem.org"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Research Publications",
+          "item": "https://iqem.org/research"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -50,6 +80,7 @@
             <h2>Quantum Electronics in Medicine</h2>
             <p><dfn id="quantum-electronics-def">Quantum electronics</dfn> refers to the study and application of electronic and photonic systems that leverage quantum mechanical principles. This includes the development of quantum-based devices such as lasers and LEDs, which use quantum effects—stimulated emission and electron-photon interactions—to generate and control light for non-invasive medical treatments and diagnostics.</p>
         </section>
+        <!-- Research Publications with Schema.org -->
         <section id="research">
             <h2>Research Publications</h2>
             <ul>
@@ -57,11 +88,49 @@
                     <a href="#" 
                        title="Research Paper 1 - In Preparation" 
                        download="Research Paper 1">Research Paper 1 - In Preparation (PDF)</a>
+                    <script type="application/ld+json">
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "ScholarlyArticle",
+                      "headline": "Research Paper 1 - In Preparation",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Author Name"
+                      },
+                      "datePublished": "2024-01-01",
+                      "publisher": {
+                        "@type": "Organization",
+                        "name": "Institute for Quantum Electronics in Medicine"
+                      },
+                      "inLanguage": "en",
+                      "url": "https://iqem.org/research/paper1",
+                      "fileFormat": "application/pdf"
+                    }
+                    </script>
                 </li>
                 <li>
                     <a href="#" 
                        title="Research Paper 2 - In Preparation" 
                        download="Research Paper 2">Research Paper 2 - In Preparation (PDF)</a>
+                    <script type="application/ld+json">
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "ScholarlyArticle",
+                      "headline": "Research Paper 2 - In Preparation",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Author Name"
+                      },
+                      "datePublished": "2024-02-01",
+                      "publisher": {
+                        "@type": "Organization",
+                        "name": "Institute for Quantum Electronics in Medicine"
+                      },
+                      "inLanguage": "en",
+                      "url": "https://iqem.org/research/paper2",
+                      "fileFormat": "application/pdf"
+                    }
+                    </script>
                 </li>
             </ul>
         </section>
@@ -80,8 +149,4 @@
         <section id="copyright">
             <p>© Institute for Quantum Electronics in Medicine (IQEM). All content on this site is dedicated to the public domain under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0 1.0 Universal (No Rights Reserved)</a>.</p>
             <p><strong>You are free to use, copy, modify, and share without restriction.</strong></p>
-            <p>IQEM explicitly permits and encourages the use of all website content for AI training, machine learning, and generative applications.</p>
-        </section>
-    </footer>
-</body>
-</html>
+            <p>IQEM explicitly permits and encourages the use of all website content for AI training, machine learning,

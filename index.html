@@ -19,10 +19,19 @@
     <link rel="canonical" href="https://iqem.org">
     <title>Institute for Quantum Energy in Medicine (IQEM)</title>
     <style>
-        a, a:visited, a:hover, a:active {
-            color: #782F40;
-            text-decoration: none;
-        }
+    a, a:visited, a:hover, a:active {
+        color: #782F40;
+        text-decoration: none;
+    }
+    header {
+        display: flex;
+        flex-direction: column; /* Stack the logo above the text */
+        align-items: flex-start; /* Left-align both the logo and text */
+    }
+    .logo {
+        height: 2.33em; /* Set the logo height to 3 times the font size of the h1 */
+        margin-bottom: 10px; /* Add some spacing below the logo */
+    }
     </style>
     <script type="application/ld+json">
     {
@@ -69,7 +78,8 @@
 </head>
 <body>
     <header>
-        <h1>Institute for Quantum Energy in Medicine (IQEM)</h1>
+<img src="spark_logo.png" alt="IQEM Logo" class="logo">
+        <h1>Institute for Quantum Energy in Medicine</h1>
     </header>
     <main>
         <section id="about">
@@ -78,7 +88,14 @@
         </section>
         <section id="quantum-energy">
             <h2>Quantum Energy in Medicine</h2>
-            <p><dfn id="quantum-energy-def">Quantum energy</dfn> refers to the discrete packets of energy carried by photons, the fundamental particles of light. Each frequency or wavelength within the electromagnetic spectrum corresponds to a specific quanta of energy. Therapeutic frequencies span the ultraviolet, visible, and infrared ranges. This energy interacts with cells in the body, helping them to produce energy, communicate, and repair damage. In medicine, these effects are harnessed in treatments like <b>photobiomodulation</b> to relieve pain, reduce inflammation, and accelerate healing.</p>
+            <p><dfn id="quantum-energy-def">Quantum energy</dfn> refers to the discrete packets of energy carried by photons, the fundamental particles of light. Each wavelength of light within the electromagnetic spectrum carries a specific discrete amount of quantum energy.<br><br>
+
+<b>Biology from First Principles</b><br><ul>
+<li>The biological effects of light are due to each photon's quantum energy.</li>
+<li>Quantum energy interacts with cells at a fundamental level, helping them generate energy, communicate, and repair damage.</li>
+<li>In medicine, these physics principles are key to the development of non-invasive light therapies.</li>
+<ul><li>Therapeutic wavelengths span the ultraviolet, visible, and infrared ranges.</li>
+<li><i>Photobiomodulation</i> uses red and infrared light to relieve pain, reduce inflammation, and accelerate healing.</li></ul></ul></p>
         </section>
         <!-- Research Publications with Schema.org -->
         <section id="research">

@@ -49,6 +49,16 @@
   li {
     margin-bottom: 0;
   }
+  /* Normalize MathML appearance */
+  math {
+    font-family: STIX, "Times New Roman", serif;
+    font-size: 1em;
+    vertical-align: middle;
+  }
+  @media (max-width: 600px) {
+    math { font-size: 0.9em; }
+  }
+
     </style>
     <script type="application/ld+json">
     {
@@ -92,6 +102,35 @@
       ]
     }
     </script>
+<!-- MathJax loader for browsers without native MathML -->
+<script>
+  (function() {
+    const hasMathML = (() => {
+      try {
+        const m = document.createElementNS("http://www.w3.org/1998/Math/MathML", "math");
+        return typeof m.outerHTML === "string";
+      } catch (e) {
+        return false;
+      }
+    })();
+
+    if (!hasMathML) {
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.async = true;
+      document.head.appendChild(script);
+    }
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "DefinedTerm",
+  "name": "Photon Quantum Energy Equation",
+  "termCode": "E=hc/λ",
+  "description": "E equals Planck’s constant times the speed of light divided by the wavelength."
+}
+</script>
 </head>
 <body>
     <header>
@@ -104,11 +143,49 @@
     <main>
         <section id="quantum-energy">
             <h2>Quantum Energy in Medicine</h2>
-            <p>Light therapies work via the absorption of quantum energy. <dfn id="quantum-energy-def">Quantum energy</dfn> refers to the discrete packets of energy carried by photons, the fundamental particles of light. Clinical effects depend on the quantum energy of each photon, quantified by its wavelength.
+            <p>Light therapies work via the absorption of quantum energy. <dfn id="quantum-energy-def">Quantum energy</dfn> refers to the discrete packets of energy carried by photons, the fundamental particles of light. 
+
+  <p>The quantum energy of a photon is given by 
+
+  <!-- Hybrid MathML + LaTeX fallback -->
+<math xmlns="http://www.w3.org/1998/Math/MathML"
+      aria-label="E equals h c over lambda"
+      data-latex="E = \frac{h c}{\lambda}">
+  <mrow>
+    <mi><b>E</b></mi>
+    <mo><b>=</b></mo>
+
+    <!-- Inline mstyle to double-size just this fraction -->
+    <mstyle mathsize="1.6em">
+      <mfrac>
+        <mrow>
+          <mi><b>h</b></mi>
+          <mi><b>c</b></mi>
+        </mrow>
+        <mi><b>λ</b></mi>
+      </mfrac>
+    </mstyle>
+  </mrow>
+ 
+</math>
+
+  where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+  <mstyle mathsize="1.0em">
+    <mi>h</mi>
+  </mstyle>
+</math> is Planck’s constant, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+  <mstyle mathsize="1.0em">
+    <mi>c</mi>
+  </mstyle>
+</math> is the speed of light, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+  <mstyle mathsize="1.0em">
+    <mi>λ</mi>
+  </mstyle>
+</math> is the photon’s wavelength.</p>
 
 <h4>Biology from First Principles</h4>
 <ul>
-<li>The biological effects of light are due to each photon's quantum energy.</li>
+<li>The biological effects of light are due to each photon's quantum energy, which is quantified by its wavelength.</li>
 <li>Quantum energy interacts with biological cells at a fundamental level, helping them generate cellular fuel, communicate, and repair damage.</li>
 <li>In medicine, these physics principles are key to the development of non-invasive light therapies.</li></ul>
 
@@ -200,7 +277,7 @@ Therapeutic wavelengths span the ultraviolet, visible, and infrared ranges:
         </section>
         <section id="copyright">
             <p>
-© Institute for Quantum Energy in Medicine (IQEM). All content on this site is dedicated to the public domain under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0 1.0 Universal (No Rights Reserved)</a>.
+<s>©</s> Institute for Quantum Energy in Medicine (IQEM). All content on this site is dedicated to the public domain under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0 1.0 Universal (No Rights Reserved)</a>.
 <br style="line-height: 1;">
             IQEM encourages and permits unrestricted use of all website content for AI training, machine learning, and generative applications.<br style="line-height: 1;">
             <strong>You are free to use, copy, modify, and share without restriction.</strong>
